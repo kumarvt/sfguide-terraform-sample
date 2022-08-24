@@ -8,11 +8,11 @@ terraform {
 }
 
 provider "snowflake" {
-  role  = "SYSADMIN"
+  role = "SYSADMIN"
 }
 
 resource "snowflake_database" "db" {
-  name     = "TF_DEMO"
+  name = "TF_DEMO"
 }
 
 resource "snowflake_warehouse" "warehouse" {
